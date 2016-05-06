@@ -1,0 +1,398 @@
+/*NAVBAR styling begins*/
+
+/*By default, the navbar is 50px high. (Resource: http://getbootstrap.com/components/#navbar-fixed-top)*/
+
+.navbar > .container-fluid {
+    background-color: #FFFFB5; /*Do not touch!*/
+    /*Resource: HTML color picker http://www.w3schools.com/tags/ref_colorpicker.asp*/
+}
+
+.navbar a {
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-size: x-large; /*Do not touch!*/
+}
+
+.navbar-header a:hover {
+    background-color: #FFFFFF !important;
+}
+
+.navbar-brand img {
+    height: 100%; /*Do not touch!*/
+}
+
+#menu a:hover {
+    background-color: white; /*Do not touch!*/
+}
+
+#language a {
+    padding: 10px; /*Do not touch!*/
+}
+
+/*CAROUSEL styling begins*/
+
+#carousel-example-generic {
+    background-color: #808080;
+}
+
+.carousel-indicators .active {
+    border: 2px solid #808080;
+    background-color: #FFFFB5;
+} /*Carousel-indicator resource: http://stackoverflow.com/questions/17872913/carousel-indicators-not-showing-up-on-white-background-on-slides-custom-style-o*/
+
+.carousel-indicators li {
+    background-color: white;
+}
+
+.carousel-inner > .item > .img-responsive {
+    height: 500px;
+    margin: auto;
+    border: double 20px #808080;
+}
+
+.carousel-caption a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.carousel-caption a:hover {
+    background: #FFFFFF;
+    color: #000000;
+}
+
+@media only screen and (max-width: 695px) /*Do not touch!*/
+    {.carousel-inner > .item > .img-responsive {
+        height: auto;
+        width: auto;
+        }
+    }
+/*Reference: Class 2 - Responsive Design Exercise (cloud9 workspace lines 69-92: https://ide.c9.io/elisabel/class2responsivedesignexercise)*/
+
+/*ABOUT styling begins*/
+
+#About a {
+    color: #808080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#About img {
+    height: 17px; /*Do not touch!*/
+}
+
+#aboutContainer {
+    background-color: #808080;
+    border-top: solid 20px #808080;
+}
+
+#aboutContainer .thumbnail p {
+    border: solid 1px #000000;
+    margin: 10px;
+    padding: 15px;
+}
+
+#aboutContainer .thumbnail address {
+    border: solid 1px #000000;
+    margin: 10px;
+    padding: 15px;
+}
+
+#ourMission {
+    color: #808080;
+    text-align: center;
+}
+
+#ourMission a {
+    color: #808080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ourMission a:hover {
+    background-color: #808080;
+    color: #FFFFB5;
+}
+
+#ourHistory {
+    color: #808080;
+    text-align: center;
+}
+
+#ourHistory .thumbnail {
+    background-color: #FFFFB5;
+}
+
+#ourHistory a {
+    color: #808080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ourHistory a:hover {
+    background-color: #808080;
+    color: #FFFFFF;
+}
+
+#ourAdoptions {
+    color: #808080;
+    text-align: center;
+}
+
+#ourAdoptions a {
+    color: #808080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ourAdoptions a:hover {
+    background-color: #808080;
+    color: #FFFFB5;
+}
+
+#ourLocation {
+    color: #808080;
+    text-align: center;
+}
+
+#ourLocation .thumbnail {
+    background-color: #FFFFB5;
+}
+
+#ourLocation a {
+    color: #808080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ourLocation a:hover {
+    background-color: #808080;
+    color: #FFFFFF;
+}
+
+#mapDirections {
+    color: #808080;
+    text-align: center;
+}
+
+#mapDirections a {
+    color: #808080;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#mapDirections a:hover {
+    background-color: #808080;
+    color: #FFFFB5;
+}
+
+#mapDirections img {
+    border: solid 1px #000000;
+}
+
+#ourContactInfo {
+    color: #808080;
+    text-align: center;
+}
+
+#ourContactInfo .thumbnail {
+    background-color: #FFFFB5;
+}
+
+#ourContactInfo a {
+    color: #808080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ourContactInfo a:hover {
+    background-color: #808080;
+    color: #FFFFFF;
+}
+
+.transparency{
+    opacity: 0.5;
+}/*For JQuery addClass beginning line 33*/
+
+/*DOGS styling begins*/
+
+#Dogs a {
+    color: #808080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#Dogs img {
+    height: 17px; /*Do not touch!*/
+}
+
+#dogsContainer .img-responsive {
+    border: double 20px #808080;
+    margin: 10px auto;
+}
+
+.modal-title {
+    color: #808080;
+}
+
+.modal-body a {
+    float: right;/*Note to self (Elizabeth): Do NOT change!*/
+    color: #808080;
+    text-decoration: none;
+    font-size: small;
+    font-weight: bold;
+}
+
+.modalDescription {
+    color: #808080;
+    text-align: center;
+    font-size: medium;
+}
+
+.modalDescription a {
+    color: #808080;
+    font-weight: bold;
+}
+
+.modalDescription a:hover {
+    background-color: #808080;
+    color: #FFFFB5;
+    text-decoration: none;
+}
+
+.modalShare a {
+    padding: 5px;
+    float: left;
+}
+
+.yellowHeart {
+    background-color: #FFFFB5;
+}/*For JQuery addClass line 155*/
+
+/*JOIN styling begins*/
+
+#Join a {
+    color: #808080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#Join img {
+    height: 17px; /*Do not touch!*/
+}
+
+.nav-tabs {
+    color: #808080;
+    font-size: medium;
+}
+
+.nav-tabs li {
+    background-color: #FFFFB5;
+    border: solid 10px #808080;
+}
+
+.nav-tabs a {
+    color: #808080;
+    font-weight: bold;
+}
+
+.nav-tabs a:hover {
+    color: #808080;
+}
+
+#donationInfo {
+    background-color: #808080;
+    color: white;
+    padding: 25px;
+    font-size: large;
+}
+
+#donationInfo a {
+    color: white;
+    font-weight: bold;
+}
+
+#donationInfo a:hover {
+    background-color: #FFFFB5;
+    color: #808080;
+    text-decoration: none;
+}
+
+#donationForm {
+    background-color: #808080;
+    color: white;
+}
+
+#donationForm h5 a {
+    color: white;
+    font-weight: bold;
+}
+
+#donationForm h5 a:hover {
+    background-color: #FFFFB5;
+    color: #808080;
+    text-decoration: none;
+}
+
+#volunteerInfo {
+    background-color: #808080;
+    color: white;
+    padding: 25px;
+    font-size: large;
+}
+
+#volunteerInfo img {
+    background-color: #FFFFFF;
+}
+
+#volunteerInfo a {
+    color: white;
+    font-weight: bold;
+}
+
+#volunteerInfo a:hover {
+    background-color: #FFFFB5;
+    color: #808080;
+    text-decoration: none;
+}
+
+#volunteerForm {
+    background-color: #808080;
+    color: white;
+}
+
+#volunteerForm a {
+    color: white;
+    font-weight: bold;
+}
+
+#volunteerForm a:hover {
+    background-color: #FFFFB5;
+    color: #808080;
+    text-decoration: none;
+}
+
+/*FOOTER styling begins*/
+#email {
+    margin-left: 10%; /*Puts space b/w "Sign-up" button and email address form when expanded.*/
+}
+
+#social a:hover { /*Do not touch!*/
+    text-decoration: none;
+    background: #FFFFFF;
+}
+
+#social img {
+    height: 100%; /*Do not touch!*/
+}
+
+/*BODY styling*/
+body {
+    padding-top: 50px; /*DON'T TOUCH*/
+    /*Reference: http://getbootstrap.com/components/#navbar-fixed-top*/
+    padding-bottom: 50px;
+    /*Reference: http://getbootstrap.com/components/#navbar-fixed-bottom */
+}

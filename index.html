@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Cleaned up code at: http://www.dirtymarkup.com/ -->
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Project Code Phase 2 - Individual Project</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+      
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+    <noscript>
+      <p>I see you do not have Javascript.</p>
+      <!--
+      Here's how to change carousel data-interval:
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="6000">
+      Data-interval resource: https://bootstrapbay.com/blog/bootstrap-3-carousel-tutorial/
+      -->
+    </noscript>
+    
+    <!-- RESPONSIVE COLLAPSIBLE NAVBAR -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+      <!-- Place container-fluid inside nav element to center & pad navbar content. Resource: http://getbootstrap.com/components/#navbar-fixed-top -->
+      
+        <div class="navbar-header" role="navigation">
+        <!-- Defining "role" makes navbars accessible. Resource: http://getbootstrap.com/components/#navbar -->
+          <a class="navbar-brand" href="#Home" title="Vida Nueva Rescue" alt="Vida Nueva Rescue"><img src="img/pawprint/pawprint42x40.png" title="Logo" alt="Logo"></a>
+          <a class="navbar-brand" href="#Home" title="Vida Nueva Rescue" alt="Vida Nueva Rescue">Vida Nueva Rescue</a>
+          <!-- <a class="navbar-brand" href="index.html" title="Vida Nueva Rescue" alt="Vida Nueva Rescue"><img src="img/navbar-brand/pawprint42x40.png" title="Logo" alt="Logo"></a> -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" title="Menu" alt="Menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Group brand & toggle together for better mobile display. Resource: http://getbootstrap.com/components/#navbar -->
+        </div> <!-- class="navbar-header" role="navigation"-->
+        
+        <div class="collapse navbar-collapse" role="navigation" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right" id="language">
+            <li><a href="#"><img src="http://megaicons.net/static/img/icons_sizes/16/1391/32/spain-flag-icon.png" title="Espanol" alt="Espanol"></a></li>
+            <li><a href="#"><img src="http://png-5.findicons.com/files/icons/282/flags/32/united_kingdom_great_britain.png" title="English" alt="English"></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right" id="menu">
+            <li><a href="#Home" title="Home" alt="Home">Home</a></li>
+            <li><a href="#About" title="About" alt="About">About</a></li>
+            <li><a href="#Dogs" title="Dogs" alt="Dogs">Dogs</a></li>
+            <li><a href="#Join" title="Join" alt="Join">Join</a></li>
+            <!-- Remove "active" class from navbar w/internal linking as per Aaron 4/27/16. -->
+          </ul>
+        </div> <!-- class="collapse navbar-collapse" role="navigation" id="mynavbar" -->
+        <!-- Group items that you want to collapse into toggle button. -->
+    
+      </div> <!-- class="container-fluid-->
+    </nav>
+    
+    <!-- CAROUSEL w/RESPONSIVE Images-->
+    <div class="container-fluid" id="Home">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner" role="listbox">
+        <!-- Reference: http://getbootstrap.com/javascript/#carousel -->
+          
+          <div class="item active">
+            <img src="img/dogs/ebony.jpg" class="img-responsive img-thumbnail center-block" title="Ebony" alt="Ebony">
+            <!-- Change "height: auto;" of ".img-responsive" to 500px b/c as per Aaron in class 1024px wide x 500px high is a good size for images in carousel. -->
+            <div class="carousel-caption">
+              <h2><a href="#About" title="About" alt="About">Vida Nueva Rescue</a></h2>
+              <h4>Finding <a href="#About" title="Our Mission" alt="Our Mission">forever homes <span class="glyphicon glyphicon-home"></span></a> for <a href="#Dogs" title="Dogs" alt="Dogs">dogs</a> who need them the most</h4>
+              <br>
+              <br>
+            </div> <!-- class="carousel-caption" -->
+          </div> <!-- class="item active" -->
+          
+          <div class="item">
+            <img src="img/dogs/buddy.jpg" class="img-responsive img-thumbnail center-block" title="Buddy" alt="Buddy">
+            <div class="carousel-caption">
+              <h2>Meet <a href="#Dogs" title="Buddy" alt="Buddy">Buddy</a></h2>
+              <h4><a href="#Dogs" title="This Week's Featured Dog" alt="This Week's Featured Dog">This Week's Featured Dog</a></h4>
+            </div> <!-- class="carousel-caption" -->
+          </div> <!-- class="item" -->
+          
+          <div class="item">
+            <img src="img/dogs/manny.jpg" class="img-responsive img-thumbnail center-block" title="Manny" alt="Manny">
+            <div class="carousel-caption">
+              <h2><a href="#Join" title="Join Us" alt="Join Us">Join Us</a></h2>
+              <h4>Find out how you can <a href="#Join" title="Donations" alt="Donations">donate</a> to and <a href="#Join" title="Volunteer" alt="Volunteer">volunteer</a> for <a href="#About" title="About" alt="About">Vida Nueva Rescue</a>.</h4>
+            </div> <!-- class="carousel-caption" -->
+          </div> <!-- class="item" -->
+          
+        </div> <!-- class="carousel-inner" role="listbox" -->
+        
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <!-- Reference: http://getbootstrap.com/javascript/#carousel -->  
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+          <!-- For screen readers only -->
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        
+      </div> <!-- id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="10000" -->
+    </div> <!-- class="container-fluid" id="Home" -->
+    <!-- Reference: Class 6 Carousel Example http://jsbin.com/julexa/edit?html,css -->
+    
+    <div class="container-fluid" id="About">
+      <h4><a href="#About" title="Vida Nueva Rescue" alt="Vida Nueva Rescue"><img src="img/pawprint/pawprint42x40.png" class="pawprint" title="Logo" alt="Logo"> About</a></h4>
+    </div>
+    
+    <!-- RESPONSIVE GRID -->
+    <div class="container-fluid" id="aboutContainer">
+      <br> <!-- Helps align internal linking jump -->
+      <div class="row">
+        
+        <div class="col-xs-12 col-sm-4" id="ourMission">
+          <div class="thumbnail">
+            <h3>Our Mission</h3>
+            <p>At Vida Nueva Rescue, our mission is to rescue and care for <a href="#Dogs" title="Dogs" alt="Dogs">dogs</a> <span class="glyphicons glyphicons-dog"></span>who have been abandoned, abused, or neglected, and find them their forever homes <span class="glyphicon glyphicon-home"></span>. We are a <a href="https://en.wikipedia.org/wiki/No-kill_shelter" target="_blank" title="No-kill shelter" alt="No-kill shelter">no-kill rescue shelter</a>, and we specialize in <a href="#Dogs" title="Dogs" alt="Dogs">dogs</a> who have a higher probability of being euthanized at other animal shelters, such as large <a href="http://www.slate.com/articles/health_and_science/science/2014/06/black_dog_syndrome_are_people_racist_against_black_pets.html" target="_blank" title="Black Dog Syndrome" alt="Black Dog Syndrome">black dogs,</a> older dogs, and special needs dogs.</p>
+          </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-4" id="ourHistory">
+          <div class="thumbnail">
+            <h3>Our History</h3>
+            <p>Vida Nueva Rescue was founded in May 2015 by Elizabeth San Martin, an animal lover and animal advocate.  Throughout her life, she has owned and rescued many animals... horses, turtles, birds, dogs, fish, and even an iguana.  After her beloved English Bulldog passed away, she decided to dedicate herself to <a href="https://en.wikipedia.org/wiki/Animal_rescue_group" target="_blank" title="Animal rescue group" alt="Animal rescue group">dog rescue</a>.  Since it began operations, Vida Nueva Rescue has saved 17 dogs from high-kill shelters, 6 dogs from abusive situations, and has successfully placed 13 dogs in their forever homes <span class="glyphicon glyphicon-home"></span>.</p>
+          </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-4" id="ourAdoptions">
+          <div class="thumbnail">
+            <h3>Our Adoptions</h3>
+            <p>Before any adoption takes place, we screen the potential adopters and do home visits to make sure all of <a href="#Dogs" title="Dogs" alt="Dogs">our dogs</a> will be properly cared for and loved. Currently, we have <a href="#Dogs" title="Dogs" alt="Dogs">10 amazing dogs</a> available for adoption. If you are interested in meeting them, please <a href="mailto:info@vidanuevarescue.org?Subject=Meet%20and%20Greet%20request" target="_top" title="Send us an email" alt="Send us an email">send us an <span class="glyphicon glyphicon-envelope"></span></a> with your availability for a <a href="mailto:info@vidanuevarescue.org?Subject=Meet%20and%20Greet%20request" target="_top" title="Meet & Greet request" alt="Meet & Greet request">Meet & Greet</a>.</p>
+          </div>
+        </div>
+        
+      </div> <!-- class="row" -->
+      
+      <div class="row">
+      
+        <div class="col-xs-12 col-sm-4" id="ourLocation">
+          <div class="thumbnail">
+            <h3>Our Location</h3>
+            <address><a href="https://www.google.com/maps/place/37-18+Northern+Blvd,+Long+Island+City,+NY+11101/@40.7519271,-73.9250571,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25f2f338c18f5:0x6fa3ac7eb5b6a88b" target="_blank" title="Vida Nueva Rescue on Google Maps" alt="Vida Nueva Rescue on Google Maps"><span class="glyphicon glyphicon-map-marker"></span>
+            37-18 Northern Boulevard<br>
+            Long Island City, New York 11101<br>
+            </a></address>
+          </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-4" id="mapDirections">
+          <div class="thumbnail">
+            <h3><a href="https://www.google.com/maps/place/37-18+Northern+Blvd,+Long+Island+City,+NY+11101/@40.7519271,-73.9250571,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25f2f338c18f5:0x6fa3ac7eb5b6a88b" target="_blank" title="Vida Nueva Rescue on Google Maps" alt="Vida Nueva Rescue on Google Maps"><span class="glyphicon glyphicon-map-marker"></span> Map & Directions</a></h3>
+            <a href="https://www.google.com/maps/place/37-18+Northern+Blvd,+Long+Island+City,+NY+11101/@40.7519271,-73.9250571,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25f2f338c18f5:0x6fa3ac7eb5b6a88b" target="_blank"><img src="https://www.google.com/maps/vt/data=RfCSdfNZ0LFPrHSm0ublXdzhdrDFhtmHhN1u-gM,s6YZf4TLs_wLgIMmGQQEdUl9carQkmkuuHyDZOiDXRHcZEDhhHEQPHcV__ncDKR9yNdPs2woqbR3v2n1XOPCyIJNTuq1r9dZ6w1iRjTnqYhKGz_okAFY0pWmBEQ" style="height: 100%; width: 100%" title="Vida Nueva Rescue on Google Maps" alt="Vida Nueva Rescue on Google Maps"></a>
+          </div>  
+        </div>  
+        
+        <div class="col-xs-12 col-sm-4" id="ourContactInfo">
+          <div class="thumbnail">
+            <h3>Our Contact Info</h3>
+            <address>
+            <span class="glyphicon glyphicon-earphone"></span> <abbr title="Phone"></abbr> 347-555-1234<br>
+            <a href="mailto:info@vidanuevarescue.org?" target="_top" title="Our Email" alt="Our Email"><span class="glyphicon glyphicon-envelope"></span> info@vidanuevarescue.org</a>
+            </address>
+          </div>
+        </div>
+      
+      </div> <!-- class="row" -->
+      <br>
+    </div> <!-- class="container-fluid" id="aboutContainer" -->  
+    
+    <div class="container-fluid" id="Dogs">
+      <h4><a href="#Dogs" title="Dogs" alt="Dogs"><img src="img/pawprint/pawprint42x40.png" class="pawprint" title="Logo" alt="Logo"> Dogs</a></h4>
+    </div>
+    
+    <!-- RESPONSIVE IMAGE GALLERY w/MODALS -->
+    <div class="container-fluid" id="dogsContainer">
+      <div class="row1">
+        
+        <div class="col-xs-12 col-sm-4">
+        <!-- image as a trigger -->
+        <a href="#myModalOne" data-toggle="modal">
+        <img src="img/dogs/buddy.jpg" class="img-responsive center-block img-thumbnail" width="100%" height="100%" title="This Week's Featured Dog - Buddy" alt="This Week's Featured Dog - Buddy">
+        </a>
+        </div> <!-- class="col-xs-12 col-sm-4" -->
+        
+        <!-- MODAL w/Header & Footer -->
+        <div class="modal fade" id="myModalOne" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+              <div class="modal-header">
+                <!-- BUTTON -->
+                <button type="button" class="close" data-dismiss="modal" title="Close" alt="Close"><span aria-hidden="true">&times;</span></button>
+                <!--Close icon reference: http://getbootstrap.com/css/#helper-classes-close -->
+                <h3 class="modal-title">This Week's Featured Dog</h3>
+              </div> <!-- class="modal-header" -->
+            
+              <div class="modal-body">
+                <img src="img/dogs/buddy.jpg" width="100%" height="100%" title="This Week's Featured Dog - Buddy" alt="This Week's Featured Dog - Buddy">
+                <!-- MODAL Image Credit -->
+                <a href="http://www.debbieschlussel.com/archives/blacklab4.jpg" target="_blank" title="Image Credit" alt="Image Credit">Image Credit</a>
+                <br>
+              </div> <!-- class="modal-body" -->
+            
+              <div class="modal-footer">
+                <!-- MODAL Description -->
+                <div class="modalDescription">
+                  <p><span style="font-weight: bold">Buddy</span> is a loveable 5 year old Black Lab and Rottweiler mix.  He enjoys going on long walks and playing catch, but his favorite activity is going to the dog park and making new friends.  He is house-trained and very well-behaved.  He loves kids and gets along with other dogs.  If you are interested in a <a href="#About" title="Our Adoptions" alt="Our Adoptions">Meet & Greet</a> with <strong>Buddy</strong>, please send your availability to: <a href="mailto:info@vidanuevarescue.org?Subject=Meet%20and%20Greet%20with%20Buddy" target="_top" title="Our Email" alt="Our Email">info@vidanuevarescue.org</a>.</p>
+                  <!-- Is <span style="font-weight: bold"> better than <strong>? -->
+                </div> <!-- class="modalDescription" -->
+                <br>
+                <!-- MODAL Share w/Social Media GLYPHICONS -->
+                <div class="modalShare">
+                  <a href="https://twitter.com/" target="_blank" title="Share my profile on Twitter" alt="Share my profile on Twitter"><img src="img/glyphs-social/glyph-twitter.png"></a>
+                  <a href="https://www.tumblr.com/" target="_blank" title="Share my profile on Tumblr" alt="Share my profile on Tumblr"><img src="img/glyphs-social/glyph-tumblr.png"></a>
+                  <a href="https://www.instagram.com/" target="_blank" title="Share my profile on Instagram" alt="Share my profile on Instagram"><img src="img/glyphs-social/glyph-instagram.png"></a>
+                  <a href="https://www.pinterest.com/" target="_blank" title="Share my profile on Pinterest" alt="Share my profile on Pinterest"><img src="img/glyphs-social/glyph-pinterest.png"></a>
+                  <a href="https://www.snapchat.com/" target="_blank" title="Share my profile on Snapchat" alt="Share my profile on Snapchat"><img src="img/glyphs-social/glyph-snapchat.png"></a>
+                  <a href="mailto:?Subject=Check%20out%20Buddy's%20profile%20on%20Vida%20Nueva%20Rescue" target="_top" title="Email my profile" alt="Email my profile"><img src="img/glyphs-social/glyph-email.png"></a>
+                  <!-- Glyphicons downloaded from: http://glyphicons.com/ -->
+                </div> <!-- class="modalShare" -->
+                <!-- MODAL Like w/GLYPHICON -->
+                <div class="modalLike">
+                  <!-- <label>Click if you like my profile.</label> Is it necessary to label the heart button? -->
+                  <button class="like"><img src="img/glyphs/glyph-heartemptysm.png" title="Like my profile" alt="Like my profile"></button>
+                </div> <!-- class="modalLike" -->
+              </div> <!-- class="modal-footer" -->
+            
+            </div> <!-- class="modal-content" -->
+          </div> <!-- class="modal-dialog" -->
+        </div> <!-- class="modal fade" id="myModalOne" role="dialog" -->
+        
+        <div class="col-xs-12 col-sm-4">
+        <!-- image as a trigger -->
+        <a href="#myModalTwo" data-toggle="modal">
+        <img src="img/dogs/betty.jpg" class="img-responsive center-block img-thumbnail" width="100%" height="100%" title="Betty" alt="Betty">
+        </a>
+        </div> <!-- class="col-xs-12 col-sm-4" -->
+        
+        <!-- MODAL w/Header & Footer -->
+        <div class="modal fade" id="myModalTwo" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+              <div class="modal-header">
+                <!-- BUTTON -->
+                <button type="button" class="close" data-dismiss="modal" title="Close" alt="Close"><span aria-hidden="true">&times;</span></button>
+                <!--Close icon reference: http://getbootstrap.com/css/#helper-classes-close -->
+                <h3 class="modal-title">Betty</h3>
+              </div> <!-- class="modal-header" -->
+            
+              <div class="modal-body">
+                <img src="img/dogs/betty.jpg" width="100%" height="100%" title="Betty" alt="Betty">
+                <!-- MODAL Image Credit -->
+                <a href="http://www.vetstreet.com/dogs/caring-for-senior-dogs-what-you-need-to-know" target="_blank" title="Image Credit" alt="Image Credit">Image Credit</a>
+                <br>
+              </div> <!-- class="modal-body" -->
+            
+              <div class="modal-footer">
+                <!-- MODAL Description -->
+                <div class="modalDescription">
+                  <p><strong>Betty</strong> is a 9 year old sweetheart who loves to cuddle and give lots of kisses. If you are interested in a <a href="#About" title="Our Adoptions" alt="Our Adoptions">Meet & Greet</a> with <strong>Betty</strong>, please send your availability to: <a href="mailto:info@vidanuevarescue.org?Subject=Meet%20and%20Greet%20with%20Betty" target="_top" title="Our Email" alt="Our Email">info@vidanuevarescue.org</a>.</p>
+                </div> <!-- class="modalDescription" -->
+                <br>
+                <!-- MODAL Share w/Social Media GLYPHICONS -->
+                <div class="modalShare">
+                  <a href="https://twitter.com/" target="_blank" title="Share my profile on Twitter" alt="Share my profile on Twitter"><img src="img/glyphs-social/glyph-twitter.png"></a>
+                  <a href="https://www.tumblr.com/" target="_blank" title="Share my profile on Tumblr" alt="Share my profile on Tumblr"><img src="img/glyphs-social/glyph-tumblr.png"></a>
+                  <a href="https://www.instagram.com/" target="_blank" title="Share my profile on Instagram" alt="Share my profile on Instagram"><img src="img/glyphs-social/glyph-instagram.png"></a>
+                  <a href="https://www.pinterest.com/" target="_blank" title="Share my profile on Pinterest" alt="Share my profile on Pinterest"><img src="img/glyphs-social/glyph-pinterest.png"></a>
+                  <a href="https://www.snapchat.com/" target="_blank" title="Share my profile on Snapchat" alt="Share my profile on Snapchat"><img src="img/glyphs-social/glyph-snapchat.png"></a>
+                  <a href="mailto:?Subject=Check%20out%20Betty's%20profile%20on%20Vida%20Nueva%20Rescue" target="_top" title="Email my profile" alt="Email my profile"><img src="img/glyphs-social/glyph-email.png"></a>
+                  <!-- Glyphicons downloaded from: http://glyphicons.com/ -->
+                </div> <!-- class="modalShare" -->
+                <!-- MODAL Like w/GLYPHICON -->
+                <div class="modalLike">
+                  <button class="like"><img src="img/glyphs/glyph-heartemptysm.png" title="Like my profile" alt="Like my profile"></button>
+                </div> <!-- class="modalLike" -->
+              </div> <!-- class="modal-footer" -->
+            
+            </div> <!-- class="modal-content" -->
+          </div> <!-- class="modal-dialog" -->
+        </div> <!-- class="modal fade" id="myModalTwo" role="dialog" -->
+        
+        <div class="col-xs-12 col-sm-4">
+        <!-- image as a trigger -->
+        <a href="#myModalThree" data-toggle="modal">
+        <img src="img/dogs/lucy.jpg" class="img-responsive center-block img-thumbnail" width="100%" height="100%" title="Lucy" alt="Lucy">
+        </a>  
+        </div> <!-- class="col-xs-12 col-sm-4" -->
+        
+        <!-- MODAL w/Header & Footer -->
+        <div class="modal fade" id="myModalThree" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+              <div class="modal-header">
+                <!-- BUTTON -->
+                <button type="button" class="close" data-dismiss="modal" title="Close" alt="Close"><span aria-hidden="true">&times;</span></button>
+                <!--Close icon reference: http://getbootstrap.com/css/#helper-classes-close -->
+                <h3 class="modal-title">Lucy</h3>
+              </div> <!-- class="modal-header" -->
+            
+              <div class="modal-body">
+                <img src="img/dogs/lucy.jpg" width="100%" height="100%" title="Lucy" alt="Lucy">
+                <!-- MODAL Image Credit -->
+                <a href="http://www.homewardtrails.org/tag/big-black-dogs/#.VaydbipViko" target="_blank" title="Image Credit" alt="Image Credit">Image Credit</a>
+                <br>
+              </div> <!-- class="modal-body" -->
+            
+              <div class="modal-footer">
+                <!-- MODAL Description -->
+                <div class="modalDescription">
+                  <p><strong>Lucy</strong> is a 2 year old Black Lab who loves running and catching frisbees. If you are interested in a <a href="#About" title="Our Adoptions" alt="Our Adoptions">Meet & Greet</a> with <strong>Lucy</strong>, please send your availability to: <a href="mailto:info@vidanuevarescue.org?Subject=Meet%20and%20Greet%20with%20Lucy" target="_top" title="Our Email" alt="Our Email">info@vidanuevarescue.org</a>.</p>
+                </div> <!-- class="modalDescription" -->
+                <br>
+                <!-- MODAL Share w/Social Media GLYPHICONS -->
+                <div class="modalShare">
+                  <a href="https://twitter.com/" target="_blank" title="Share my profile on Twitter" alt="Share my profile on Twitter"><img src="img/glyphs-social/glyph-twitter.png"></a>
+                  <a href="https://www.tumblr.com/" target="_blank" title="Share my profile on Tumblr" alt="Share my profile on Tumblr"><img src="img/glyphs-social/glyph-tumblr.png"></a>
+                  <a href="https://www.instagram.com/" target="_blank" title="Share my profile on Instagram" alt="Share my profile on Instagram"><img src="img/glyphs-social/glyph-instagram.png"></a>
+                  <a href="https://www.pinterest.com/" target="_blank" title="Share my profile on Pinterest" alt="Share my profile on Pinterest"><img src="img/glyphs-social/glyph-pinterest.png"></a>
+                  <a href="https://www.snapchat.com/" target="_blank" title="Share my profile on Snapchat" alt="Share my profile on Snapchat"><img src="img/glyphs-social/glyph-snapchat.png"></a>
+                  <a href="mailto:?Subject=Check%20out%20Lucy's%20profile%20on%20Vida%20Nueva%20Rescue" target="_top" title="Email my profile" alt="Email my profile"><img src="img/glyphs-social/glyph-email.png"></a>
+                  <!-- Glyphicons downloaded from: http://glyphicons.com/ -->
+                </div> <!-- class="modalShare" -->
+                <!-- MODAL Like w/GLYPHICON -->
+                <div class="modalLike">
+                  <button class="like"><img src="img/glyphs/glyph-heartemptysm.png" title="Like my profile" alt="Like my profile"></button>
+                </div> <!-- class="modalLike" -->
+              </div> <!-- class="modal-footer" -->
+            
+            </div> <!-- class="modal-content" -->
+          </div> <!-- class="modal-dialog" -->
+        </div> <!-- class="modal fade" id="myModalThree" role="dialog" -->
+        
+      </div> <!-- class="row1" -->
+
+      <div class="row2">
+        
+        <div class="col-xs-12 col-sm-6">
+        <!-- image as a trigger -->
+        <a href="#myModalFour" data-toggle="modal">
+        <img src="img/dogs/buster.jpg" class="img-responsive center-block img-thumbnail" width="100%" height="100%" title="Buster" alt="Buster">
+        </a>
+        </div> <!-- class="col-xs-12 col-sm-6" -->
+        
+        <!-- MODAL w/Header & Footer -->
+        <div class="modal fade" id="myModalFour" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+              <div class="modal-header">
+                <!-- BUTTON -->
+                <button type="button" class="close" data-dismiss="modal" title="Close" alt="Close"><span aria-hidden="true">&times;</span></button>
+                <!--Close icon reference: http://getbootstrap.com/css/#helper-classes-close -->
+                <h3 class="modal-title">Buster</h3>
+              </div> <!-- class="modal-header" -->
+            
+              <div class="modal-body">
+                <img src="img/dogs/buster.jpg" width="100%" height="100%" title="Buster" alt="Buster">
+                <!-- MODAL Image Credit -->
+                <a href="http://www.lastchanceanimalrescue.co.uk/kennel/agesdog.php" target="_blank" title="Image Credit" alt="Image Credit">Image Credit</a>
+                <br>
+              </div> <!-- class="modal-body" -->
+            
+              <div class="modal-footer">
+                <!-- MODAL Description -->
+                <div class="modalDescription">
+                  <p><strong>Buster</strong> is a 1 year old Pit Bull mix who doesn't let his deafness get in the way of having fun. If you are interested in a <a href="#About" title="Our Adoptions" alt="Our Adoptions">Meet & Greet</a> with <strong>Buster</strong>, please send your availability to: <a href="mailto:info@vidanuevarescue.org?Subject=Meet%20and%20Greet%20with%20Buster" target="_top" title="Our Email" alt="Our Email">info@vidanuevarescue.org</a>.</p>
+                </div> <!-- class="modalDescription" -->
+                <br>
+                <!-- MODAL Share w/Social Media GLYPHICONS -->
+                <div class="modalShare">
+                  <a href="https://twitter.com/" target="_blank" title="Share my profile on Twitter" alt="Share my profile on Twitter"><img src="img/glyphs-social/glyph-twitter.png"></a>
+                  <a href="https://www.tumblr.com/" target="_blank" title="Share my profile on Tumblr" alt="Share my profile on Tumblr"><img src="img/glyphs-social/glyph-tumblr.png"></a>
+                  <a href="https://www.instagram.com/" target="_blank" title="Share my profile on Instagram" alt="Share my profile on Instagram"><img src="img/glyphs-social/glyph-instagram.png"></a>
+                  <a href="https://www.pinterest.com/" target="_blank" title="Share my profile on Pinterest" alt="Share my profile on Pinterest"><img src="img/glyphs-social/glyph-pinterest.png"></a>
+                  <a href="https://www.snapchat.com/" target="_blank" title="Share my profile on Snapchat" alt="Share my profile on Snapchat"><img src="img/glyphs-social/glyph-snapchat.png"></a>
+                  <a href="mailto:?Subject=Check%20out%20Buster's%20profile%20on%20Vida%20Nueva%20Rescue" target="_top" title="Email my profile" alt="Email my profile"><img src="img/glyphs-social/glyph-email.png"></a>
+                  <!-- Glyphicons downloaded from: http://glyphicons.com/ -->
+                </div> <!-- class="modalShare" -->
+                <!-- MODAL Like w/GLYPHICON -->
+                <div class="modalLike">
+                  <button class="like"><img src="img/glyphs/glyph-heartemptysm.png" title="Like my profile" alt="Like my profile"></button>
+                </div> <!-- class="modalLike" -->
+              </div> <!-- class="modal-footer" -->
+            
+            </div> <!-- class="modal-content" -->
+          </div> <!-- class="modal-dialog" -->
+        </div> <!-- class="modal fade" id="myModalSix" role="dialog" -->
+        
+        <div class="col-xs-12 col-sm-6">
+        <!-- image as a trigger -->
+        <a href="#myModalFive" data-toggle="modal">
+        <img src="img/dogs/manny.jpg" class="img-responsive center-block img-thumbnail" width="100%" height="100%" title="Manny" alt="Manny">
+        </a>  
+        </div> <!-- class="col-xs-12 col-sm-6" -->
+        
+        <!-- MODAL w/Header & Footer -->
+        <div class="modal fade" id="myModalFive" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+              <div class="modal-header">
+                <!-- BUTTON -->
+                <button type="button" class="close" data-dismiss="modal" title="Close" alt="Close"><span aria-hidden="true">&times;</span></button>
+                <!--Close icon reference: http://getbootstrap.com/css/#helper-classes-close -->
+                <h3 class="modal-title">Manny</h3>
+              </div> <!-- class="modal-header" -->
+              
+              <div class="modal-body">
+                <img src="img/dogs/manny.jpg" width="100%" height="100%" title="Manny" alt="Manny">
+                <!-- MODAL Image Credit -->
+                <a href="http://kerryg.hubpages.com/hub/Adopt-a-Black-Dog" target="_blank" title="Image Credit" alt="Image Credit">Image Credit</a>
+                <br>
+              </div> <!-- class="modal-body" -->
+              
+              <div class="modal-footer">
+                <!-- MODAL Description -->
+                <div class="modalDescription">
+                  <p><strong>Manny</strong> is a 3 year old Rottweiler mix who loves to play tug of war, especially with kids. If you are interested in a <a href="#About" title="Our Adoptions" alt="Our Adoptions">Meet & Greet</a> with <strong>Manny</strong>, please send your availability to: <a href="mailto:info@vidanuevarescue.org?Subject=Meet%20and%20Greet%20with%20Manny" target="_top" title="Our Email" alt="Our Email">info@vidanuevarescue.org</a>.</p>
+                </div> <!-- class="modalDescription" -->
+                <br>
+                <!-- MODAL Share w/Social Media GLYPHICONS -->
+                <div class="modalShare">
+                  <a href="https://twitter.com/" target="_blank" title="Share my profile on Twitter" alt="Share my profile on Twitter"><img src="img/glyphs-social/glyph-twitter.png"></a>
+                  <a href="https://www.tumblr.com/" target="_blank" title="Share my profile on Tumblr" alt="Share my profile on Tumblr"><img src="img/glyphs-social/glyph-tumblr.png"></a>
+                  <a href="https://www.instagram.com/" target="_blank" title="Share my profile on Instagram" alt="Share my profile on Instagram"><img src="img/glyphs-social/glyph-instagram.png"></a>
+                  <a href="https://www.pinterest.com/" target="_blank" title="Share my profile on Pinterest" alt="Share my profile on Pinterest"><img src="img/glyphs-social/glyph-pinterest.png"></a>
+                  <a href="https://www.snapchat.com/" target="_blank" title="Share my profile on Snapchat" alt="Share my profile on Snapchat"><img src="img/glyphs-social/glyph-snapchat.png"></a>
+                  <a href="mailto:?Subject=Check%20out%20Manny's%20profile%20on%20Vida%20Nueva%20Rescue" target="_top" title="Email my profile" alt="Email my profile"><img src="img/glyphs-social/glyph-email.png"></a>
+                  <!-- Glyphicons downloaded from: http://glyphicons.com/ -->
+                </div> <!-- class="modalShare" -->
+                <!-- MODAL Like w/GLYPHICON -->
+                <div class="modalLike">
+                  <button class="like"><img src="img/glyphs/glyph-heartemptysm.png" title="Like my profile" alt="Like my profile"></button>
+                </div> <!-- class="modalLike" -->
+              </div> <!-- class="modal-footer" -->
+            
+            </div> <!-- class="modal-content" -->
+          </div> <!-- class="modal-dialog" -->
+        </div> <!-- class="modal fade" id="myModalFive" role="dialog" -->
+        
+      </div> <!-- class="row2" -->
+      
+      <div class="row3">
+        
+        <div class="col-xs-12 col-sm-6">
+        <!-- image as a trigger -->
+        <a href="#myModalSix" data-toggle="modal">
+        <img src="img/dogs/blanca.jpg" class="img-responsive center-block img-thumbnail" width="100%" height="100%" title="Blanca" alt="Blanca">
+        </a>
+        </div> <!-- class="col-xs-12 col-sm-6" -->
+        
+        <!-- MODAL w/Header & Footer -->
+        <div class="modal fade" id="myModalSix" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+              <div class="modal-header">
+                <!-- BUTTON -->
+                <button type="button" class="close" data-dismiss="modal" title="Close" alt="Close"><span aria-hidden="true">&times;</span></button>
+                <!--Close icon reference: http://getbootstrap.com/css/#helper-classes-close -->
+                <h3 class="modal-title">Blanca</h3>
+              </div> <!-- class="modal-header" -->
+            
+              <div class="modal-body">
+                <img src="img/dogs/blanca.jpg" width="100%" height="100%" title="Blanca" alt="Blanca">
+                <!-- MODAL Image Credit -->
+                <a href="http://www.pawposse.com/big-black-dog-rescue-desperately-needed/blog-283/" target="_blank" title="Image Credit" alt="Image Credit">Image Credit</a>
+                <br>
+              </div> <!-- class="modal-body" -->
+            
+              <div class="modal-footer">
+                <!-- MODAL Description -->
+                <div class="modalDescription">
+                  <p><strong>Blanca</strong> is a 4 year old Labrador mix who loves to swim and get bubble baths. If you are interested in a <a href="#About" title="Our Adoptions" alt="Our Adoptions">Meet & Greet</a> with <strong>Blanca</strong>, please send your availability to: <a href="mailto:info@vidanuevarescue.org?Subject=Meet%20and%20Greet%20with%20Blanca" target="_top" title="Our Email" alt="Our Email">info@vidanuevarescue.org</a>.</p>
+                </div> <!-- class="modalDescription" -->
+                <br>
+                <!-- MODAL Share w/Social Media GLYPHICONS -->
+                <div class="modalShare">
+                  <a href="https://twitter.com/" target="_blank" title="Share my profile on Twitter" alt="Share my profile on Twitter"><img src="img/glyphs-social/glyph-twitter.png"></a>
+                  <a href="https://www.tumblr.com/" target="_blank" title="Share my profile on Tumblr" alt="Share my profile on Tumblr"><img src="img/glyphs-social/glyph-tumblr.png"></a>
+                  <a href="https://www.instagram.com/" target="_blank" title="Share my profile on Instagram" alt="Share my profile on Instagram"><img src="img/glyphs-social/glyph-instagram.png"></a>
+                  <a href="https://www.pinterest.com/" target="_blank" title="Share my profile on Pinterest" alt="Share my profile on Pinterest"><img src="img/glyphs-social/glyph-pinterest.png"></a>
+                  <a href="https://www.snapchat.com/" target="_blank" title="Share my profile on Snapchat" alt="Share my profile on Snapchat"><img src="img/glyphs-social/glyph-snapchat.png"></a>
+                  <a href="mailto:?Subject=Check%20out%20Blanca's%20profile%20on%20Vida%20Nueva%20Rescue" target="_top" title="Email my profile" alt="Email my profile"><img src="img/glyphs-social/glyph-email.png"></a>
+                  <!-- Glyphicons downloaded from: http://glyphicons.com/ -->
+                </div> <!-- class="modalShare" -->
+                <!-- MODAL Like w/GLYPHICON -->
+                <div class="modalLike">
+                  <button class="like"><img src="img/glyphs/glyph-heartemptysm.png" title="Like my profile" alt="Like my profile"></button>
+                </div> <!-- class="modalLike" -->
+              </div> <!-- class="modal-footer" -->
+            
+            </div> <!-- class="modal-content" -->
+          </div> <!-- class="modal-dialog" -->
+        </div> <!-- class="modal fade" id="myModalTen" role="dialog" -->
+        
+        <div class="col-xs-12 col-sm-6">
+        <!-- image as a trigger -->
+        <a href="#myModalSeven" data-toggle="modal">
+        <img src="img/dogs/ebony.jpg" class="img-responsive center-block img-thumbnail" width="100%" height="100%" title="Ebony" alt="Ebony">
+        </a>
+        </div> <!-- class="col-xs-12 col-sm-6" -->
+        
+        <!-- MODAL w/Header & Footer -->
+        <div class="modal fade" id="myModalSeven" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+              <div class="modal-header">
+                <!-- BUTTON -->
+                <button type="button" class="close" data-dismiss="modal" title="Close" alt="Close"><span aria-hidden="true">&times;</span></button>
+                <!--Close icon reference: http://getbootstrap.com/css/#helper-classes-close -->
+                <h3 class="modal-title">Ebony</h3>
+              </div> <!-- class="modal-header" -->
+            
+              <div class="modal-body">
+                <img src="img/dogs/ebony.jpg" width="100%" height="100%" title="Ebony" alt="Ebony">
+                <!-- MODAL Image Credit -->
+                <a href="http://thehydrantblog.com/2011/10/06/black-dog-syndrome-bad-luck-for-rescue-shelters/" target="_blank" title="Image Credit" alt="Image Credit">Image Credit</a>
+                <br>
+              </div> <!-- class="modal-body" -->
+            
+              <div class="modal-footer">
+                <!-- MODAL Description -->
+                <div class="modalDescription">
+                  <p><strong>Ebony</strong> is a 6 year old Black Lab mix who loves belly rubs and snoozing on the couch. If you are interested in a <a href="#About" title="Our Adoptions" alt="Our Adoptions">Meet & Greet</a> with <strong>Ebony</strong>, please send your availability to: <a href="mailto:info@vidanuevarescue.org?Subject=Meet%20and%20Greet%20with%20Ebony" target="_top" title="Our Email" alt="Our Email">info@vidanuevarescue.org</a>.</p>
+                </div> <!-- class="modalDescription" -->
+                <br>
+                <!-- MODAL Share w/Social Media GLYPHICONS -->
+                <div class="modalShare">
+                  <a href="https://twitter.com/" target="_blank" title="Share my profile on Twitter" alt="Share my profile on Twitter"><img src="img/glyphs-social/glyph-twitter.png"></a>
+                  <a href="https://www.tumblr.com/" target="_blank" title="Share my profile on Tumblr" alt="Share my profile on Tumblr"><img src="img/glyphs-social/glyph-tumblr.png"></a>
+                  <a href="https://www.instagram.com/" target="_blank" title="Share my profile on Instagram" alt="Share my profile on Instagram"><img src="img/glyphs-social/glyph-instagram.png"></a>
+                  <a href="https://www.pinterest.com/" target="_blank" title="Share my profile on Pinterest" alt="Share my profile on Pinterest"><img src="img/glyphs-social/glyph-pinterest.png"></a>
+                  <a href="https://www.snapchat.com/" target="_blank" title="Share my profile on Snapchat" alt="Share my profile on Snapchat"><img src="img/glyphs-social/glyph-snapchat.png"></a>
+                  <a href="mailto:?Subject=Check%20out%20Ebony's%20profile%20on%20Vida%20Nueva%20Rescue" target="_top" title="Email my profile" alt="Email my profile"><img src="img/glyphs-social/glyph-email.png"></a>
+                  <!-- Glyphicons downloaded from: http://glyphicons.com/ -->
+                </div> <!-- class="modalShare" -->
+                <!-- MODAL Like w/GLYPHICON -->
+                <div class="modalLike">
+                  <button class="like"><img src="img/glyphs/glyph-heartemptysm.png" title="Like my profile" alt="Like my profile"></button>
+                </div> <!-- class="modalLike" -->
+              </div> <!-- class="modal-footer" -->
+            
+            </div> <!-- class="modal-content" -->
+          </div> <!-- class="modal-dialog" -->
+        </div> <!-- class="modal fade" id="myModalSeven" role="dialog" -->
+        
+      </div> <!-- class="row3" -->
+      
+      <div class="row4">
+      
+        <div class="col-xs-12 col-sm-4">
+        <!-- image as a trigger -->
+        <a href="#myModalEight" data-toggle="modal">
+        <img src="img/dogs/harry.jpg" class="img-responsive center-block img-thumbnail" width="100%" height="100%" title="Harry" alt="Harry">
+        </a>
+        </div> <!-- class="col-xs-12 col-sm-4" -->
+        
+        <!-- MODAL w/Header & Footer -->
+        <div class="modal fade" id="myModalEight" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+              <div class="modal-header">
+                <!-- BUTTON -->
+                <button type="button" class="close" data-dismiss="modal" title="Close" alt="Close"><span aria-hidden="true">&times;</span></button>
+                <!--Close icon reference: http://getbootstrap.com/css/#helper-classes-close -->
+                <h3 class="modal-title">Harry</h3>
+              </div> <!-- class="modal-header" -->
+              
+              <div class="modal-body">
+                <img src="img/dogs/harry.jpg" width="100%" height="100%" title="Harry" alt="Harry">
+                <!-- MODAL Image Credit -->
+                <a href="http://blog.northjersey.com/jerseydog/9056/ark-naturals-aims-products-at-older-dogs/" target="_blank" title="Image Credit" alt="Image Credit">Image Credit</a>
+                <br>
+              </div> <!-- class="modal-body" -->
+            
+              <div class="modal-footer">
+                <!-- MODAL Description -->
+                <div class="modalDescription">
+                  <p><strong>Harry</strong> is a 7 year old distinguished gentleman who is always up for a stroll in the park. If you are interested in a <a href="#About" title="Our Adoptions" alt="Our Adoptions">Meet & Greet</a> with <strong>Harry</strong>, please send your availability to: <a href="mailto:info@vidanuevarescue.org?Subject=Meet%20and%20Greet%20with%20Harry" target="_top" title="Our Email" alt="Our Email">info@vidanuevarescue.org</a>.</p>
+                </div> <!-- class="modalDescription" -->
+                <br>
+                <!-- MODAL Share w/Social Media GLYPHICONS -->
+                <div class="modalShare">
+                  <a href="https://twitter.com/" target="_blank" title="Share my profile on Twitter" alt="Share my profile on Twitter"><img src="img/glyphs-social/glyph-twitter.png"></a>
+                  <a href="https://www.tumblr.com/" target="_blank" title="Share my profile on Tumblr" alt="Share my profile on Tumblr"><img src="img/glyphs-social/glyph-tumblr.png"></a>
+                  <a href="https://www.instagram.com/" target="_blank" title="Share my profile on Instagram" alt="Share my profile on Instagram"><img src="img/glyphs-social/glyph-instagram.png"></a>
+                  <a href="https://www.pinterest.com/" target="_blank" title="Share my profile on Pinterest" alt="Share my profile on Pinterest"><img src="img/glyphs-social/glyph-pinterest.png"></a>
+                  <a href="https://www.snapchat.com/" target="_blank" title="Share my profile on Snapchat" alt="Share my profile on Snapchat"><img src="img/glyphs-social/glyph-snapchat.png"></a>
+                  <a href="mailto:?Subject=Check%20out%20Harry's%20profile%20on%20Vida%20Nueva%20Rescue" target="_top" title="Email my profile" alt="Email my profile"><img src="img/glyphs-social/glyph-email.png"></a>
+                  <!-- Glyphicons downloaded from: http://glyphicons.com/ -->
+                </div> <!-- class="modalShare" -->
+                <!-- MODAL Like w/GLYPHICON -->
+                <div class="modalLike">
+                  <button class="like"><img src="img/glyphs/glyph-heartemptysm.png" title="Like my profile" alt="Like my profile"></button>
+                </div> <!-- class="modalLike" -->
+              </div> <!-- class="modal-footer" -->
+            
+            </div> <!-- class="modal-content" -->
+          </div> <!-- class="modal-dialog" -->
+        </div> <!-- class="modal fade" id="myModalFour" role="dialog" -->
+        
+        <div class="col-xs-12 col-sm-4">
+        <!-- image as a trigger -->
+        <a href="#myModalNine" data-toggle="modal">
+        <img src="img/dogs/ralph.jpg" class="img-responsive center-block img-thumbnail" width="100%" height="100%" title="Ralph" alt="Ralph">
+        </a>
+        </div> <!-- class="col-xs-12 col-sm-4" -->
+        
+        <!-- MODAL w/Header & Footer -->
+        <div class="modal fade" id="myModalNine" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+              <div class="modal-header">
+                <!-- BUTTON -->
+                <button type="button" class="close" data-dismiss="modal" title="Close" alt="Close"><span aria-hidden="true">&times;</span></button>
+                <!--Close icon reference: http://getbootstrap.com/css/#helper-classes-close -->
+                <h3 class="modal-title">Ralph</h3>
+              </div> <!-- class="modal-header" -->
+            
+              <div class="modal-body">
+                <img src="img/dogs/ralph.jpg" width="100%" height="100%" title="Ralph" alt="Ralph">
+                <!-- MODAL Image Credit -->
+                <a href="http://www.thehappybeast.com/nutrition-supplements-and-exercise-for-senior-dogs/" target="_blank" title="Image Credit" alt="Image Credit">Image Credit</a>
+                <br>
+              </div> <!-- class="modal-body" -->
+            
+              <div class="modal-footer">
+                <!-- MODAL Description -->
+                <div class="modalDescription">
+                  <p><strong>Ralph</strong> is an 8 year old Irish Wolfhound mix whose soft furry coat makes the perfect blanket. If you are interested in a <a href="#About" title="Our Adoptions" alt="Our Adoptions">Meet & Greet</a> with <strong>Ralph</strong>, please send your availability to: <a href="mailto:info@vidanuevarescue.org?Subject=Meet%20and%20Greet%20with%20Ralph" target="_top" title="Our Email" alt="Our Email">info@vidanuevarescue.org</a>.</p>
+                </div> <!-- class="modalDescription" -->
+                <br>
+                <!-- MODAL Share w/Social Media GLYPHICONS -->
+                <div class="modalShare">
+                  <a href="https://twitter.com/" target="_blank" title="Share my profile on Twitter" alt="Share my profile on Twitter"><img src="img/glyphs-social/glyph-twitter.png"></a>
+                  <a href="https://www.tumblr.com/" target="_blank" title="Share my profile on Tumblr" alt="Share my profile on Tumblr"><img src="img/glyphs-social/glyph-tumblr.png"></a>
+                  <a href="https://www.instagram.com/" target="_blank" title="Share my profile on Instagram" alt="Share my profile on Instagram"><img src="img/glyphs-social/glyph-instagram.png"></a>
+                  <a href="https://www.pinterest.com/" target="_blank" title="Share my profile on Pinterest" alt="Share my profile on Pinterest"><img src="img/glyphs-social/glyph-pinterest.png"></a>
+                  <a href="https://www.snapchat.com/" target="_blank" title="Share my profile on Snapchat" alt="Share my profile on Snapchat"><img src="img/glyphs-social/glyph-snapchat.png"></a>
+                  <a href="mailto:?Subject=Check%20out%20Ralph's%20profile%20on%20Vida%20Nueva%20Rescue" target="_top" title="Email my profile" alt="Email my profile"><img src="img/glyphs-social/glyph-email.png"></a>
+                  <!-- Glyphicons downloaded from: http://glyphicons.com/ -->
+                </div> <!-- class="modalShare" -->
+                <!-- MODAL Like w/GLYPHICON -->
+                <div class="modalLike">
+                  <button class="like"><img src="img/glyphs/glyph-heartemptysm.png" title="Like my profile" alt="Like my profile"></button>
+                </div> <!-- class="modalLike" -->
+              </div> <!-- class="modal-footer" -->
+            
+            </div> <!-- class="modal-content" -->
+          </div> <!-- class="modal-dialog" -->
+        </div> <!-- class="modal fade" id="myModalNine" role="dialog" -->
+        
+        <div class="col-xs-12 col-sm-4">
+        <!-- image as a trigger -->
+        <a href="#myModalTen" data-toggle="modal">
+        <img src="img/dogs/susie.jpg" class="img-responsive center-block img-thumbnail" width="100%" height="100%" title="Susie" alt="Susie">
+        </a>
+        </div> <!-- class="col-xs-12 col-sm-4" -->
+        
+        <!-- MODAL w/Header & Footer -->
+        <div class="modal fade" id="myModalTen" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+              <div class="modal-header">
+                <!-- BUTTON -->
+                <button type="button" class="close" data-dismiss="modal" title="Close" alt="Close"><span aria-hidden="true">&times;</span></button>
+                <!--Close icon reference: http://getbootstrap.com/css/#helper-classes-close -->
+                <h3 class="modal-title">Susie</h3>
+              </div> <!-- class="modal-header" -->
+            
+              <div class="modal-body">
+                <img src="img/dogs/susie.jpg" width="100%" height="100%" title="Susie" alt="Susie">
+                <!-- MODAL Image Credit -->
+                <a href="http://www.bigdogsbighearts.com/Special-Needs-Success-Page.html" target="_blank" title="Image Credit" alt="Image Credit">Image Credit</a>
+                <br>
+              </div> <!-- class="modal-body" -->
+            
+              <div class="modal-footer">
+                <!-- MODAL Description -->
+                <div class="modalDescription">
+                  <p><strong>Susie</strong> is 4 year old German Shepherd who doesn't let her prosthetic foot slow her down. If you are interested in a <a href="#About" title="Our Adoptions" alt="Our Adoptions">Meet & Greet</a> with <strong>Susie</strong>, please send your availability to: <a href="mailto:info@vidanuevarescue.org?Subject=Meet%20and%20Greet%20with%20Susie" target="_top" title="Our Email" alt="Our Email">info@vidanuevarescue.org</a>.</p>
+                </div> <!-- class="modalDescription" -->
+                <br>
+                <!-- MODAL Share w/Social Media GLYPHICONS -->
+                <div class="modalShare">
+                  <a href="https://twitter.com/" target="_blank" title="Share my profile on Twitter" alt="Share my profile on Twitter"><img src="img/glyphs-social/glyph-twitter.png"></a>
+                  <a href="https://www.tumblr.com/" target="_blank" title="Share my profile on Tumblr" alt="Share my profile on Tumblr"><img src="img/glyphs-social/glyph-tumblr.png"></a>
+                  <a href="https://www.instagram.com/" target="_blank" title="Share my profile on Instagram" alt="Share my profile on Instagram"><img src="img/glyphs-social/glyph-instagram.png"></a>
+                  <a href="https://www.pinterest.com/" target="_blank" title="Share my profile on Pinterest" alt="Share my profile on Pinterest"><img src="img/glyphs-social/glyph-pinterest.png"></a>
+                  <a href="https://www.snapchat.com/" target="_blank" title="Share my profile on Snapchat" alt="Share my profile on Snapchat"><img src="img/glyphs-social/glyph-snapchat.png"></a>
+                  <a href="mailto:?Subject=Check%20out%20Susie's%20profile%20on%20Vida%20Nueva%20Rescue" target="_top" title="Email my profile" alt="Email my profile"><img src="img/glyphs-social/glyph-email.png"></a>
+                  <!-- Glyphicons downloaded from: http://glyphicons.com/ -->
+                </div> <!-- class="modalShare" -->
+                <!-- MODAL Like w/GLYPHICON -->
+                <div class="modalLike">
+                  <button class="like"><img src="img/glyphs/glyph-heartemptysm.png" title="Like my profile" alt="Like my profile"></button>
+                </div> <!-- class="modalLike" -->
+              </div> <!-- class="modal-footer" -->
+            
+            </div> <!-- class="modal-content" -->
+          </div> <!-- class="modal-dialog" -->
+        </div> <!-- class="modal fade" id="myModalEight" role="dialog" -->
+        
+      </div> <!-- class="row4" -->
+      <!-- Reference: http://jsbin.com/yakezo/edit?html,output -->
+      
+    </div> <!-- class="container-fluid" id="dogsContainer" -->
+    
+    <div class="container-fluid" id="Join">
+      <h4><a href="#Join" title="Join" alt="Join"><img src="img/pawprint/pawprint42x40.png" class="pawprint" title="Logo" alt="Logo"> Join</a></h4>
+    </div>
+    
+    <div class="container-fluid" id="joinContainer">
+      <div class="row">
+        <div class="col-xs-12">
+        
+          <!-- TABS -->
+          <ul class="nav nav-tabs nav-justified">
+            <li class="active"><a href="#donationInfo" data-toggle="tab"><span class="glyphicon glyphicon-info-sign"></span> Donation Info</a></li>
+            <li><a href="#donationForm" data-toggle="tab"><span class="glyphicon glyphicon-pencil"></span> Donation Form</a></li>
+            <li><a href="#volunteerInfo" data-toggle="tab"><span class="glyphicon glyphicon-info-sign"></span> Volunteer Info</a></li>
+            <li><a href="#volunteerForm" data-toggle="tab"><span class="glyphicon glyphicon-pencil"></span> Volunteer Form</a></li>
+          </ul>
+      
+        <div class="tab-content">
+          <div class="tab-pane active" id="donationInfo">
+            <h3><span class="glyphicon glyphicon-gift"></span> Donations</h3>
+            <p><a href="#About" title="About" alt="About">Vida Nueva Rescue</a> is a non-profit <a href="https://en.wikipedia.org/wiki/501(c)_organization#501.28c.29.283.29" target="_blank" title="501(c)(3)">501(c)(3)</a> organization and relies 100% on private donations. Monetary contributions of $100 or more are fully tax-deductible. We also assist with <a href="mailto:info@vidanuevarescue.org?Subject=Estate%20Planning" target="_top" title="Ask us about Estate Planning" alt="Ask us about Estate Planning">estate planning</a> for those who would like to continue supporting the ideals and efforts of <a href="#About" title="Our Mission" alt="Our Mission">Vida Nueva Rescue</a> in the future.</p>
+            <p>We also accept non-monetary contributions. We are always in need of supplies for our <a href="#Dogs" title="Dogs" alt="Dogs">dogs</a> and for our <a href="https://www.google.com/maps/place/37-18+Northern+Blvd,+Long+Island+City,+NY+11101/@40.7519271,-73.9250571,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25f2f338c18f5:0x6fa3ac7eb5b6a88b" target="_blank" title="Vida Nueva Rescue on Google Maps" alt="Vida Nueva Rescue on Google Maps"><span class="glyphicon glyphicon-map-marker"></span> Long Island City site</a>.  We welcome the following private and corporate donations:</p>
+            <ul>
+              <li>dog food</li>
+              <li>blankets</li>
+              <li>dog toys</li>
+              <li>cleaning supplies</li>
+              <li>paper products</li>
+            </ul>
+            <p>If you are interested in making a donation to <a href="#About" title="About" alt="About">Vida Nueva Rescue</a>, please click on our Donation Form.</p>
+            <!-- Why can't you use nav-tabs links to direct to specific tab? (Ex: <a href="#donationForm" title="Donation Form" alt="Donation Form">Donation Form</a>) -->
+          </div> <!-- class="tab-pane active" id="donationInfo" -->
+          
+          <div class="tab-pane" id="donationForm">
+          <!-- FORM -->
+            <div class="container">
+            <form>
+            <h3>Donation Form</h3>
+            <br>
+            <div class="form-group">
+              <label for="exampleInputFirstName">First Name</label>
+              <input type="firstname" class="form-control" id="exampleInputFirstName" placeholder="First Name">
+            </div> <!-- class="form-group" -->
+            
+            <div class="form-group">
+              <label for="exampleInputLastName">Last Name</label>
+              <input type="lastname" class="form-control" id="exampleInputLastName" placeholder="Last Name">
+            </div> <!-- class="form-group" -->
+            
+            <div class="form-group">
+              <label for="exampleInputEmail">Email Address</label>
+              <input type="email" class="form-control" id="exampleInputEmail" placeholder="Email Address">
+            </div> <!-- class="form-group" -->
+            
+            <div>
+              <h5>If you would like to make a <span class="glyphicon glyphicon-usd"></span> contribution, please click on the <a href="https://www.paypal.com/home" target="_blank" title="PayPal" alt="PayPal">PayPal</a> button and you will be directed to a secure online payment site. You will not be charged a fee for using <a href="https://www.paypal.com/home" target="_blank" title="PayPal" alt="PayPal">PayPal</a> to make a donation to <a href="#Home" title="Vida Nueva Rescue" alt="Vida Nueva Rescue">Vida Nueva Rescue</a>.</h5>
+              <a class="btn btn-default" role="button" href="https://www.paypal.com/home" target="_blank"><img src="img/glyphs/glyph-paypal.png" title="PayPal" alt="PayPal"></a>
+              <!-- Reference: http://getbootstrap.com/css/#buttons -->
+            </div>
+            <br>
+            <div>
+              <h5>If you would like to donate supplies for our <a href="#Dogs" title="Dogs" alt="Dogs">dogs</a> and/or our <a href="https://www.google.com/maps/place/37-18+Northern+Blvd,+Long+Island+City,+NY+11101/@40.7519271,-73.9250571,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25f2f338c18f5:0x6fa3ac7eb5b6a88b" target="_blank" title="Vida Nueva Rescue on Google Maps" alt="Vida Nueva Rescue on Google Maps"><span class="glyphicon glyphicon-map-marker"></span> Long Island City site</a>, please check the appropriate boxes and we will contact you to schedule a donation pick-up/drop-off.</h5>
+            </div>
+            
+            <div class="row">
+            
+            <div class="col-xs-12 col-sm-3">
+            <div class="checkbox">
+              <label><input type="checkbox">private donation</label>
+            </div>
+            </div> <!-- class="col-xs-12 col-sm-3" -->
+            <div class="col-xs-12 col-sm-3">
+            <div class="checkbox">
+              <label><input type="checkbox">corporate donation</label>
+            </div>
+            </div> <!-- class="col-xs-12 col-sm-3" -->
+            
+            </div> <!-- class="row" -->
+            
+            <div class="row">
+            
+            <div class="col-xs-12">
+            <div class="checkbox">
+              <label><input type="checkbox">dog food</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">blankets</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">dog toys</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">cleaning supplies</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">paper products</label>
+            </div>
+            </div> <!-- class="col-xs-12" -->
+            
+            </div> <!-- class="row" -->
+            
+            <br>
+            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="reset" class="btn btn-default">Reset</button>
+            <br>
+            <br>
+            
+            </form>
+            </div> <!-- class="container" -->
+            <!-- Reference: Class 5 Forms Example http://jsbin.com/qahonu/edit?html,output -->
+          </div> <!-- class="tab-pane" id="donationForm" -->
+          
+          <div class="tab-pane" id="volunteerInfo">
+            <h3><img src="img/glyphs/glyph-donate.png"> Volunteers</h3>
+            <p>The volunteers at <a href="#About" title="About" alt="About">Vida Nueva Rescue</a> are a very special group of people.  We could not accomplish what we do without their tireless dedication and commitment, and we are grateful for them.</p>
+            <p>The following are volunteer positions at our <a href="https://www.google.com/maps/place/37-18+Northern+Blvd,+Long+Island+City,+NY+11101/@40.7519271,-73.9250571,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25f2f338c18f5:0x6fa3ac7eb5b6a88b" target="_blank" title="Vida Nueva Rescue on Google Maps" alt="Vida Nueva Rescue on Google Maps"><span class="glyphicon glyphicon-map-marker"></span> Long Island City site:</a></p>
+            <ul>
+              <li>dog walkers (morning, afternoon, and evening hours)</li>
+              <li>dogcare (bathing, feeding, kennel cleaning)</li>
+              <li>special needs (administering medication, wound management, physical therapy)</li>
+            </ul>
+              <p>If you are interested in volunteering at <a href="#About" title="About" alt="About">Vida Nueva Rescue</a>, please click on our Volunteer Form.</p>
+          </div> <!-- class="tab-pane" id="volunteerInfo" -->
+        
+          <div class="tab-pane" id="volunteerForm">
+          <!-- FORM -->
+          <div class="container">
+          <form>
+            <h3>Volunteer Form</h3>
+            <br>
+            <div class="form-group">
+              <label for="exampleInputFirstName">First Name</label>
+              <input type="firstname" class="form-control" id="exampleInputFirstName" placeholder="First Name">
+            </div> <!-- class="form-group" -->
+            
+            <div class="form-group">
+              <label for="exampleInputLastName">Last Name</label>
+              <input type="lastname" class="form-control" id="exampleInputLastName" placeholder="Last Name">
+            </div> <!-- class="form-group" -->
+            
+            <div class="form-group">
+              <label for="exampleInputEmail">Email Address</label>
+              <input type="email" class="form-control" id="exampleInputEmail" placeholder="Email Address">
+            </div> <!-- class="form-group" -->
+            
+            <div><h5>If you are interested in walking our <a href="#Dogs" title="Dogs" alt="Dogs">Vida Nueva Rescue dogs</a>, please check days and times you are available.</h5></div>
+            
+            <div class="row">
+            
+            <div class="col-xs-12 col-sm-4">
+            <div class="checkbox">
+              <label><input type="checkbox">M 7-8 A.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">T 7-8 A.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">W 7-8 A.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">Th 7-8 A.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">F 7-8 A.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">Sa 7-8 A.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">Su 7-8 A.M.</label>
+            </div>
+            </div> <!-- class="col-xs-12 col-sm-4" -->
+            
+            <div class="col-xs-12 col-sm-4">
+            <div class="checkbox">
+              <label><input type="checkbox">M 1-2 P.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">T 1-2 P.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">W 1-2 P.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">Th 1-2 P.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">F 1-2 P.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">Sa 1-2 P.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">Su 1-2 P.M.</label>
+            </div>
+            </div> <!-- class="col-xs-12 col-sm-4" -->
+            
+            <div class="col-xs-12 col-sm-4">
+            <div class="checkbox">
+              <label><input type="checkbox">M 7-8 P.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">T 7-8 P.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">W 7-8 P.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">Th 7-8 P.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">F 7-8 P.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">Sa 7-8 P.M.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">Su 7-8 P.M.</label>
+            </div>
+            </div> <!-- class="col-xs-12 col-sm-4" -->
+            
+            </div> <!-- class="row" -->
+            
+            <div><h5>We have flexible hours for volunteers who are interested in dogcare (bathing, feeding, kennel cleaning). Please check days and times you are available. All dogcare hours include playtime with our <a href="#Dogs" title="Dogs" alt="Dogs">Vida Nueva Rescue dogs</a>.</h5></div>
+            
+            <div class="row">
+            
+            <div class="col-xs-12">
+            <div class="checkbox">
+              <label><input type="checkbox">bathing (weekly)</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">feeding (daily A.M.)</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">feeding (daily P.M.)</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">kennel cleaning (daily A.M.)</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">kennel cleaning (daily P.M.)</label>
+            </div>
+            </div> <!-- class="col-xs-12" -->
+            
+            </div> <!-- class="row" -->
+            
+            <br>
+            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="reset" class="btn btn-default">Reset</button>
+            <br>
+            <br>
+            
+            <div>
+              <h5>If you have any <a href="https://en.wikipedia.org/wiki/Paraveterinary_workers#Veterinary_nurse_and_technician" target="_blank" title="Veterinary Technician/Assistant" alt="Veterinary Technician/Assistant">Veterinary Technician/Assistant</a> experience and would like to help our dogs with special needs (administering medication, wound management, physical therapy), please <a href="mailto:info@vidanuevarescue.org?Subject=Volunteer%20-%20Special%20Needs" target="_top" title="Send us an email" alt="Send us an email">send us an <span class="glyphicon glyphicon-envelope"></span></a> with your resume and availability for <a href="mailto:info@vidanuevarescue.org?Subject=Volunteer%20-%20Special%20Needs" target="_top" title="Volunteer - Special Needs" alt="Volunteer - Special Needs">Volunteer - Special Needs</a>.</h5>
+            </div>
+            <br>
+            <br>
+              
+          </form>
+          </div> <!-- class="container" -->
+          <!-- Reference: Class 5 Forms Example http://jsbin.com/qahonu/edit?html,output -->
+          </div> <!-- class="tab-pane" id="volunteerForm" -->
+        
+        </div> <!-- class="tab-content" -->
+        <!-- Reference: http://jsbin.com/pupujihuzi/edit?html,output -->
+
+        </div> <!-- class="col-xs-12" -->
+      </div> <!-- class="row" -->
+    </div> <!-- class="container-fluid id="joinContainer" -->
+    
+    <br>
+    <br>
+    
+    <!-- RESPONSIVE COLLAPSIBLE NAVBAR -->
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container-fluid">
+      <!-- Reference: http://getbootstrap.com/components/#navbar-fixed-bottom -->
+      
+        <!-- Brand & toggle grouped together for better mobile display as per http://getbootstrap.com/components/#navbar -->
+        <div class="navbar-header" role="navigation">
+          <!-- <a class="navbar-brand" href="mailto:elisabelsanmartin@gmail.com?Subject=web%20development%20request" target="_top" title="Email" alt="Email">Elizabeth San Martin</a> -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myFooter" title="Menu" alt="Menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <!--Resource: http://stackoverflow.com/questions/18864657/icon-bar-in-twitter-bootstrap-navigation-bar -->
+          </button>
+        </div> <!-- class="navbar-header" role="navigation"-->
+        
+        <!-- Toggle items grouped together -->
+        <div class="collapse navbar-collapse" role="navigation" id="myFooter">
+          <!--
+          <form class="navbar-form form-inline navbar-left" id="email">
+            <div class="form-group">
+              <label for="exampleInputEmail"></label>
+              <input type="email" class="form-control" id="exampleInputEmail" placeholder="your email address" title="Sign up for our monthly newsletter!" alt="Sign up for our monthly newsletter!">
+            </div>
+            <button type="submit" class="btn navbar-btn btn-sm" title="Submit your email address" alt="Submit your email address"><span class="glyphicon glyphicon-envelope"></span> Submit</button>
+          </form>
+          -->
+          <button type="button" class="btn navbar-btn navbar-left btn-default" data-toggle="collapse" data-target="#emailSignUp" title="Sign up for our monthly newsletter!" alt="Sign up for our monthly newsletter!"><span class="glyphicon glyphicon-envelope"></span> Sign-up</button>
+          <div id="emailSignUp" class="collapse">
+            <form class="navbar-form form-inline" id="email">
+            <!-- Do not use .navbar-left -->
+              <div class="form-group">
+                <label for="exampleInputEmail"></label>
+                <input type="email" class="form-control" id="exampleInputEmail" placeholder="your email address" title="Enter your email address" alt="Enter your email address">
+              </div>
+              <button type="submit" class="btn navbar-btn btn-sm" title="Submit your email address" alt="Submit your email address"><span class="glyphicon glyphicon-ok"></span></button>
+            </form>
+          </div> <!-- id="emailSignUp" class="collapse" -->
+          <!-- Resource: http://www.w3schools.com/bootstrap/bootstrap_collapse.asp -->
+          <!-- <button data-toggle="collapse"> solved problem of #myFooter stacking into 2 lines when reduces to smaller screen size. -->
+          
+          <ul class="nav navbar-nav navbar-left" id="social">
+          <!-- Reference: http://getbootstrap.com/components/#navbar-component-alignment -->
+            <li><a href="https://twitter.com/" target="_blank" title="Follow us on Twitter" alt="Follow us on Twitter"><img src="img/glyphs-social/glyph-twitter.png"></a></li>
+            <li><a href="https://www.tumblr.com/" target="_blank" title="Follow us on Tumblr" alt="Follow us on Tumblr"><img src="img/glyphs-social/glyph-tumblr.png"></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" title="Follow us on Instagram" alt="Follow us on Instagram"><img src="img/glyphs-social/glyph-instagram.png"></a></li>
+            <li><a href="https://www.pinterest.com/" target="_blank" title="Follow us on Pinterest" alt="Follow us on Pinterest"><img src="img/glyphs-social/glyph-pinterest.png"></a></li>
+            <li><a href="https://www.snapchat.com/" target="_blank" title="Follow us on Snapchat" alt="Follow us on Snapchat"><img src="img/glyphs-social/glyph-snapchat.png"></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank" title="Follow us on YouTube" alt="Follow us on YouTube"><img src="img/glyphs-social/glyph-youtube.png"></a></li>
+            <li><a href="mailto:info@vidanuevarescue.org?" target="_top" title=" Our Email" alt="Our Email"><img src="img/glyphs-social/glyph-email.png"></a></li>
+            <!-- Should I remove "Our Email" from id="social" section? -->
+          </ul>
+          
+          <!--
+          <button type="button" class="btn navbar-btn navbar-right btn-default" data-toggle="collapse" data-target="#search" title="Search" alt="Search"><span class="glyphicon glyphicon-search"></span></button>
+          <div id="search" class="collapse">
+            <form class="navbar-form form-inline" id="email">
+            -->
+            <!-- Do not use .navbar-left -->
+              <!--
+              <div class="form-group">
+                <label for="exampleInputEmail"></label>
+                <input type="email" class="form-control" id="exampleInputEmail" placeholder="your email address" title="Enter your email address" alt="Enter your email address">
+              </div>
+              <button type="submit" class="btn navbar-btn btn-sm" title="Submit your email address" alt="Submit your email address"><span class="glyphicon glyphicon-ok"></span></button>
+            </form>
+          </div>
+          -->
+          <!-- id="emailSignUp" class="collapse" -->
+          
+          <form class="navbar-form form-inline navbar-right" role="search" id="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search" title="Search" alt="Search">
+            </div>
+            <!-- Search GLYPHICON-->
+            <button type="submit" class="btn navbar-btn btn-sm" title="Submit" alt="Submit"><span class="glyphicon glyphicon-search"></span></button>
+            <!-- Reference: http://getbootstrap.com/components/#navbar-buttons -->
+          </form>
+        </div> <!-- class="collapse navbar-collapse" role="navigation" id="myfooter" -->
+        
+      </div> <!-- class="container-fluid" -->
+    </nav>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+      
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    
+    <!-- My Javascript File -->
+    <script src="js/myjavascript.js"></script>
+  
+  </body>
+
+</html>
